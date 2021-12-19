@@ -15,7 +15,7 @@
 .card{
     position: relative;
     overflow:hidden;
-    background: var(--dark-card);
+    background: var(--card-bg);
     color:var(--dark-text1); 
     text-align: center;
     padding: rem(25);
@@ -24,7 +24,7 @@
     cursor: pointer;
 
     &:hover{
-        background: var(--dark-card-hover);
+        background: var(--card-hover);
     }
     
     &--facebook {
@@ -63,7 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: re(5);
+        margin-top: rem(5);
         margin-bottom: rem(28);
         height: rem(20);
     }
@@ -74,24 +74,7 @@
     }
     &__icon{
         margin-right: rem(8);
-        
-        &--facebook{
-            
-        }
-        &--twitter {
-            
-        }
-        &--instagram {
-            
-        }
-        &--youtube {
-            
-        }
-        
     } 
-    &__top{
-
-    }
     &__username{
         font-size: rem(12);
         font-weight: 700;
@@ -100,7 +83,7 @@
         margin-bottom: rem(25);
     }
     &__count{
-        color: var(--light-bg);
+        color: var(--text-color);
         font-weight: 700;
         letter-spacing: rem(-2);
         line-height: 1;
@@ -115,7 +98,7 @@
         }
     }
     &__label{
-        color:var(--dark-text1);
+        color:var(--text-color2);
         font-size: rem(12);
         font-weight: 400;
         text-transform: uppercase;

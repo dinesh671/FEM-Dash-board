@@ -1,2 +1,2 @@
-"use strict";console.log("hello world");
+"use strict";for(var setColorMode=function(){console.log("setColorMode"),console.log(localStorage.getItem("colorMode")),"dark"==localStorage.getItem("colorMode")?setDarkMode():setLightMode()},setDarkMode=function(){document.querySelector("body").classList="dark"},setLightMode=function(){document.querySelector("body").classList="light"},radioButtons=document.querySelectorAll(".toggle__wrapper input"),i=0;i<radioButtons.length;i++)radioButtons[i].addEventListener("click",(function(o){document.getElementById("dark").checked?localStorage.setItem("colorMode","dark"):localStorage.setItem("colorMode","light")}));setColorMode();
 //# sourceMappingURL=script.js.map
